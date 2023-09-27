@@ -41,11 +41,17 @@ body {
 /* welcome page */
 .home-page-grid {
     display: grid;
-    background-color:rgb(26, 25, 25);
-    height: 700px;
+    background-color:rgb(255, 255, 255);
+    height: 100vh;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 150px;
+    .welcome_image{
+       vertical-align: bottom;
+       height: 90%;
+       width: 100%;
+        
+    }
 }
 
 /* About Page */
