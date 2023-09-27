@@ -1,6 +1,6 @@
 /* Atributes of page body */
 body {
-    background-color: rgb(22, 21, 21);
+    background-color:rgb(255, 255, 255);
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -16,114 +16,52 @@ body {
 /* Page Grid Layout */
 .page-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    grid-template-columns: 1fr;
-    row-gap: 100px;
-    width: 100%;
+    grid-template-rows: max-content;
+    row-gap: 0px;
 }
 
 
+.nav_bar{
+ height: 150px; 
+ position: fixed;
+ background-color:rgb(255, 255, 255);
+ width: 100%;
+ .logo{
+    margin-left: 45%;
+    margin-right: 45%;
+    height: 100%;
+    width: 100%;
+  
+  
 
+  
+ } 
+}
 
-/* HomePage */
+/* welcome page */
 .home-page-grid {
     display: grid;
-    grid-template-columns: 1fr 1.7fr;
-    background-color: white;
-    font-family: roboto;
-    box-shadow: 10px 25px 25px rgb(0, 0, 0);
-    column-gap: 10px; 
+    background-color:rgb(26, 25, 25);
+    height: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
 }
-
-.home-page-photo-container {
-    display: flex;
-    align-items: flex-end;
-}
-.home-page-text {
-    margin-right: 40px;
-    margin-top: 75px;
-    
-    margin-bottom: 40px;
-    width: 100%
-    
-}
-.greeting-text {
-    font-weight: 1;
-    font-size: 80px;
-    
-   
-}
-.greeting-text-name {
-    font-size: 100px;
-    line-height: 15px;
-    width: 100%;
-    
-}
-.jason-text{
-    color: rgb(8, 94, 8);
-    
-}
-.bio-text {
-    font-size: 25px;
-    width: 800px;
-    
-}
-.resume-text {
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size:21px;
-    color: white;
-    background-color:rgb(22, 21, 21) ;
-    box-shadow: 10px 10px 20px rgb(22, 21, 21) ;
-}
-.resume-link {
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-    
-}
-
-/* responsive media queries for mobile devices  */
-@media only screen and (max-width: 1200px) {
-    .home-page-photo-container {
-        display: none;
-
-    }
-    .home-page-text {
-        margin-left: 60px;
-    }
-    
-    .greeting-text-name {
-        
-      line-height: 80px;
-        margin-top: 70px;
-        margin-bottom: 50px;
-    }
-    
-    .greeting-text {
-        
-        line-height: 0px;
-    }
-    
-}
-
-
-
 
 /* About Page */
 .about-page-grid {
     background-color: black;
     color: aliceblue;
     font-family: roboto;
-    box-shadow: 10px 25px 25px rgb(0, 0, 0);
+    
+    height: 800px;
 }
 
 /* Portfolio Page */
 .portfolio-page-grid {
-    background-color: aliceblue;
+    background-color: black;
     font-family: roboto;
-    box-shadow: 10px 25px 25px rgb(0, 0, 0);
+    height: 100px;
 }
 
 /* Contact Page */
@@ -131,5 +69,10 @@ body {
     background-color: black;
     color: aliceblue;
     font-family: roboto;
-    box-shadow: 10px 25px 25px rgb(0, 0, 0);
+    height: 800px;
+}
+/* responsive media queries for mobile devices  */
+@media only screen and (max-width: 1200px) {
+    
+    
 }
