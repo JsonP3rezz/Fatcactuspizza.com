@@ -15,42 +15,48 @@ body {
 
 /* Page Grid Layout */
 .page-grid {
-    display: grid;
-    grid-template-rows: max-content;
-    row-gap: 0px;
+    display:flex;
+    flex-direction: column;
+    
+    
+    
 }
 
 
 .nav_bar{
- height: 150px; 
- position: fixed;
- background-color:rgb(255, 255, 255);
+ height: 10%; 
  width: 100%;
+ position: fixed;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ 
+ background-color:rgb(255, 255, 255);
+ border-bottom: solid;
+ 
  .logo{
-    margin-left: 45%;
-    margin-right: 45%;
-    height: 100%;
-    width: 100%;
-  
-  
-
-  
+    height:100%;
+    align-self: center;
+    justify-self: center;
  } 
 }
 
 /* welcome page */
 .home-page-grid {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:rgb(255, 255, 255);
     height: 100vh;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 150px;
+    width: 100%;
+    
     .welcome_image{
-       vertical-align: bottom;
-       height: 90%;
+       height: 80%;
        width: 100%;
-        
+       overflow: hidden;
+       
+    
     }
 }
 
@@ -60,14 +66,14 @@ body {
     color: aliceblue;
     font-family: roboto;
     
-    height: 800px;
+    height:100vh;
 }
 
 /* Portfolio Page */
 .portfolio-page-grid {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     font-family: roboto;
-    height: 100px;
+    height: 100vh;
 }
 
 /* Contact Page */
@@ -75,10 +81,10 @@ body {
     background-color: black;
     color: aliceblue;
     font-family: roboto;
-    height: 800px;
+    height: 100vh;
 }
 /* responsive media queries for mobile devices  */
-@media only screen and (max-width: 1200px) {
-    
+@media only screen and (max-width: 600px) {
+   
     
 }
